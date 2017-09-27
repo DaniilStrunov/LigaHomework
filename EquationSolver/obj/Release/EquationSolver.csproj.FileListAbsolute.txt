@@ -1,0 +1,5 @@
+D:\Projects\EquationSolver\EquationSolver\bin\Release\EquationSolver.dll
+D:\Projects\EquationSolver\EquationSolver\bin\Release\EquationSolver.pdb
+D:\Projects\EquationSolver\EquationSolver\obj\Release\EquationSolver.csprojResolveAssemblyReference.cache
+D:\Projects\EquationSolver\EquationSolver\obj\Release\EquationSolver.dll
+D:\Projects\EquationSolver\EquationSolver\obj\Release\EquationSolver.pdb

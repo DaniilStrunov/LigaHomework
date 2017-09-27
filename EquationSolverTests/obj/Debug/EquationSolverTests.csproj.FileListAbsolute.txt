@@ -1,0 +1,9 @@
+D:\Projects\EquationSolver\EquationSolverTests\bin\Debug\EquationSolverTests.dll
+D:\Projects\EquationSolver\EquationSolverTests\bin\Debug\EquationSolverTests.pdb
+D:\Projects\EquationSolver\EquationSolverTests\bin\Debug\EquationSolver.dll
+D:\Projects\EquationSolver\EquationSolverTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Projects\EquationSolver\EquationSolverTests\bin\Debug\EquationSolver.pdb
+D:\Projects\EquationSolver\EquationSolverTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Projects\EquationSolver\EquationSolverTests\obj\Debug\EquationSolverTests.csprojResolveAssemblyReference.cache
+D:\Projects\EquationSolver\EquationSolverTests\obj\Debug\EquationSolverTests.dll
+D:\Projects\EquationSolver\EquationSolverTests\obj\Debug\EquationSolverTests.pdb
