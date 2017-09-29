@@ -23,11 +23,39 @@ namespace EquationSolverTests
             CollectionAssert.AreEqual(coefficients, actualCoefficients);
         }
         [TestMethod]
-        public void EquationString_SouldBeValid()
+        public void EquationString_ShouldBeValid1()
         {
             string equation = "-123x^2+190223x-123124=0";
             bool valid = EquationSolver.EquationSolver.verifiesOfValidityOfEquation(equation);
             Assert.IsTrue(valid);
+        }
+        [TestMethod]
+        public void EquationString_ShouldBeValid2()
+        {
+            string equation = "123x^2+x-0=0";
+            bool valid = EquationSolver.EquationSolver.verifiesOfValidityOfEquation(equation);
+            Assert.IsTrue(valid);
+        }
+        [TestMethod]
+        public void EquationString_ShouldNotBeValid1()
+        {
+            string equation = "x2+190223x-123124=0";
+            bool valid = EquationSolver.EquationSolver.verifiesOfValidityOfEquation(equation);
+            Assert.IsFalse(valid);
+        }
+        [TestMethod]
+        public void EquationString_ShouldNotBeValid2()
+        {
+            string equation = "x^2+190223-123124=0";
+            bool valid = EquationSolver.EquationSolver.verifiesOfValidityOfEquation(equation);
+            Assert.IsFalse(valid);
+        }
+        [TestMethod]
+        public void EquationString_ShouldNotBeValid3()
+        {
+            string equation = "x^2+fx-123124=0";
+            bool valid = EquationSolver.EquationSolver.verifiesOfValidityOfEquation(equation);
+            Assert.IsFalse(valid);
         }
         [TestMethod]
         public void CoefficientsAndDiscriminant_ShouldBeRightRoots()
@@ -41,5 +69,6 @@ namespace EquationSolverTests
             Assert.AreEqual(firstRoot, actualFirstRoot);
             Assert.AreEqual(secondRoot, actualSecondRoot);
         }
+
     }
 }
