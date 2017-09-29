@@ -25,7 +25,7 @@ namespace EquationSolverTests
         [TestMethod]
         public void EquationString_SouldBeValid()
         {
-            string equation = "-x^2+190223x-123124=0";
+            string equation = "-123x^2+190223x-123124=0";
             bool valid = EquationSolver.EquationSolver.verifiesOfValidityOfEquation(equation);
             Assert.IsTrue(valid);
         }
@@ -41,7 +41,5 @@ namespace EquationSolverTests
             Assert.AreEqual(firstRoot, actualFirstRoot);
             Assert.AreEqual(secondRoot, actualSecondRoot);
         }
-
-
     }
 }

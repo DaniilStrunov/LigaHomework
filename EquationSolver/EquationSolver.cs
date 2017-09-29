@@ -9,10 +9,11 @@ namespace EquationSolver
 {
     public static class EquationSolver
     {
+
         public static int[] parseEquation(string Equation)
         {
             int[] intCoefficients = new int[3];
-            string[] stringCoefficients = Equation.Split(new String[] { "x^2", "x", "X^2", "X", "=0" }, StringSplitOptions.None);
+            string[] stringCoefficients = Equation.Split(new string[] { "x^2", "x", "X^2", "X", "=0" }, StringSplitOptions.None);
             if (stringCoefficients[0] == "")
             {
                 stringCoefficients[0] = "1";
@@ -41,7 +42,8 @@ namespace EquationSolver
         }
         public static bool verifiesOfValidityOfEquation(string equation)
         {
-            string pattern = "[+-]?\d*[x^2][+-]?\d*[x][+-]?\d*=0$";
+            string pattern = @"^[+-]?\d*[x][@^][2][+-]?\d*[x][+-]?\d*[=][0]$";
+            //  pattern = @"^(\+-)?\d+\*x\^2\+(-)?\d+\*x\+(-)?\d+=0$";
             bool valid = Regex.IsMatch(equation, pattern, RegexOptions.IgnoreCase);
             return valid;
         }
@@ -59,6 +61,19 @@ namespace EquationSolver
         {
             Console.WriteLine("The fitst root of equation: " + firstRoot + "\n" +
                 "The second root of equation: " + secondRoot);
+        }
+        public static bool verifiesOfValidityOfDiscriminant(int discriminant)
+        {
+            bool valid;
+            if (discriminant >= 0)
+            {
+                valid = true;
+            }
+            else
+            {
+                valid = false;
+            }
+            return valid;
         }
 
     }
